@@ -47,6 +47,11 @@
 	```
 - Show networks in docker: ```docker network ls```
 - Create a network in docker: ```docker network create NETWORK_NAME```
+- Share a image with Docker Hub: ```docker push IMAGE_NAME```
+	- Before, you must log in using the command: ```docker login```
+- Save and recovery a docker image:
+	- **Save**: ```docker save IMAGE_NAME > CUSTOM_NAME.rar```
+	- **Restore**: ```docker load --input CUSTOM_NAME.rar```
 
 ## Workflow
 - Docker file **build** Docker image **run** Docker container
