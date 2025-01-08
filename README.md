@@ -33,8 +33,9 @@
 	- ```docker build -t website:latest .```
 
 ## Avanced commands
-- Run a container: ```docker -it -rm -d -p LOCAL_PORT:IMAGE_PORT --name CUSTOM_NAME_CONTAINER NAME_IMAGE```
+- Run a container: ```docker -it --rm -d -p LOCAL_PORT:IMAGE_PORT --name CUSTOM_NAME_CONTAINER NAME_IMAGE```
 	- ```docker run -it --rm -d -p 8080:80 --name web website```
+	- ```docker run -it --rm -d -p 8080:80 --name web website:1.0``` or ```docker run -it --rm -d -p 8080:80 --name web website:latest```
 
 ## Workflow
 - Docker file **build** Docker image **run** Docker container
