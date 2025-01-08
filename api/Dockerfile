@@ -16,5 +16,4 @@ CMD [ "python", "-m", "flask", "run", "--host=0.0.0.0" ]
 #diferencia de la página web, que nginx utiliza el puerto 80, flask utiliza por defecto el puerto 5000,
 #por lo que si se quiere utilizar los puertos 8085:80 flask arrojara un error, ya que con el puerto 
 #8085 el local se comunica al contenedor (Funciona siempre y cuando no estes ocupando ya ese puerto) 
-#y despues el contenedor intenta comunicarse al puerto 80 lo cual no tendrá nada ya que Flask está en 
-#el 5000.
+#y despues el contenedor intenta comunicarse al puerto 80 lo cual no tendrá nada ya que Flask está en el 5000.

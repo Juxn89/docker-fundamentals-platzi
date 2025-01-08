@@ -36,6 +36,15 @@
 - Run a container: ```docker -it --rm -d -p LOCAL_PORT:IMAGE_PORT --name CUSTOM_NAME_CONTAINER NAME_IMAGE```
 	- ```docker run -it --rm -d -p 8080:80 --name web website```
 	- ```docker run -it --rm -d -p 8080:80 --name web website:1.0``` or ```docker run -it --rm -d -p 8080:80 --name web website:latest```
+- Run a container with volumen: ```docker -it --rm -d -p -v ./LOCAL_FOLDER:CONTAINER_FOLDER LOCAL_PORT:IMAGE_PORT --name CUSTOM_NAME_CONTAINER NAME_IMAGE```
+	- ```docker run -it --rm -d -p 8080:80 ./site:/usr/share/nginx/html/site --name web website:1.0```
+	```docker
+	FROM nginx:latest
+
+	COPY /site	/usr/share/nginx/html
+
+	VOLUME ["/site", "/usr/share/nginx/html"]
+	```
 
 ## Workflow
 - Docker file **build** Docker image **run** Docker container
