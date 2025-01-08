@@ -45,6 +45,8 @@
 
 	VOLUME ["/site", "/usr/share/nginx/html"]
 	```
+- Show networks in docker: ```docker network ls```
+- Create a network in docker: ```docker network create NETWORK_NAME```
 
 ## Workflow
 - Docker file **build** Docker image **run** Docker container
