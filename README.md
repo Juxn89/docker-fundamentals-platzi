@@ -53,5 +53,10 @@
 	- **Save**: ```docker save IMAGE_NAME > CUSTOM_NAME.rar```
 	- **Restore**: ```docker load --input CUSTOM_NAME.rar```
 
+## Docker Compose
+### Commands
+- Build: ```docker compose build```
+- Run: ```docker compose run```
+
 ## Workflow
 - Docker file **build** Docker image **run** Docker container
